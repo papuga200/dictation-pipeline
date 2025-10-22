@@ -1,0 +1,3467 @@
+{
+    "id": "2b3542c4-4c27-42fb-b6f9-c9e6cd808252",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "speech_understanding": null,
+    "translated_texts": null,
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/d3998848-0ebe-4a13-8726-a04ed90be820",
+    "text": "As a boy, Robert Ballard liked to read about shipwrecks. He read a lot about the Titanic. My lifelong dream was to find this great ship, he says. On August 31, 1985, Ballard's dream came true. He found the wreck of the Titanic. The ship was in two main parts, lying 4 km under the sea. Using video cameras and an undersea robot, Ballard looked around the ship. He found many items that told the sad story of the Titanic's end. For example, he found a child's shoes, a reminder of the many deaths that happened that night in 1912. In 1986, Ballard visited the Titanic again. This time, he reached the ship in a small submarine. A deep sea robot took photos inside the ship. When other people saw the photos, they wanted to visit the ship, too. When Ballard returned in 2004, he found the Titanic in very bad condition. Other explorers had taken away about 6,000 items like clothes, dishes and shoes. Some even took pieces of the ship. They think these things should be moved to a safer place. But Ballard doesn't agree. Ballard believes that taking things from the Titanic is wrong. Instead, he wants to put lights and cameras on and around the shipwreck. This way, people can see the great ship and remember what happened to it. As long as she needs protection, says Ballard, the Titanic will always be part of my life.",
+    "words": [
+      {
+        "text": "As",
+        "start": 320,
+        "end": 440,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "a",
+        "start": 440,
+        "end": 600,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "boy,",
+        "start": 600,
+        "end": 960,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "Robert",
+        "start": 1440,
+        "end": 1880,
+        "confidence": 0.9991862,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard",
+        "start": 1880,
+        "end": 2480,
+        "confidence": 0.875,
+        "speaker": "A"
+      },
+      {
+        "text": "liked",
+        "start": 2480,
+        "end": 2800,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "to",
+        "start": 2800,
+        "end": 2920,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "read",
+        "start": 2920,
+        "end": 3120,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "about",
+        "start": 3120,
+        "end": 3400,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "shipwrecks.",
+        "start": 3400,
+        "end": 4160,
+        "confidence": 0.9265137,
+        "speaker": "A"
+      },
+      {
+        "text": "He",
+        "start": 4800,
+        "end": 5120,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "read",
+        "start": 5120,
+        "end": 5360,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "a",
+        "start": 5360,
+        "end": 5560,
+        "confidence": 0.9970703,
+        "speaker": "A"
+      },
+      {
+        "text": "lot",
+        "start": 5560,
+        "end": 5840,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "about",
+        "start": 5840,
+        "end": 6160,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 6160,
+        "end": 6360,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic.",
+        "start": 6360,
+        "end": 7040,
+        "confidence": 0.7947591,
+        "speaker": "A"
+      },
+      {
+        "text": "My",
+        "start": 8160,
+        "end": 8440,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "lifelong",
+        "start": 8440,
+        "end": 9040,
+        "confidence": 0.9947917,
+        "speaker": "A"
+      },
+      {
+        "text": "dream",
+        "start": 9040,
+        "end": 9360,
+        "confidence": 0.8833008,
+        "speaker": "A"
+      },
+      {
+        "text": "was",
+        "start": 9360,
+        "end": 9600,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "to",
+        "start": 9600,
+        "end": 9840,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "find",
+        "start": 9840,
+        "end": 10080,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "this",
+        "start": 10080,
+        "end": 10360,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "great",
+        "start": 10360,
+        "end": 10720,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "ship,",
+        "start": 10720,
+        "end": 11200,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "he",
+        "start": 11440,
+        "end": 11800,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "says.",
+        "start": 11800,
+        "end": 12160,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "On",
+        "start": 12720,
+        "end": 13080,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "August",
+        "start": 13080,
+        "end": 13520,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "31,",
+        "start": 13520,
+        "end": 14492,
+        "confidence": 0.99961,
+        "speaker": "A"
+      },
+      {
+        "text": "1985,",
+        "start": 14708,
+        "end": 15680,
+        "confidence": 0.99961,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard's",
+        "start": 16079,
+        "end": 16920,
+        "confidence": 0.95825195,
+        "speaker": "A"
+      },
+      {
+        "text": "dream",
+        "start": 16920,
+        "end": 17240,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "came",
+        "start": 17240,
+        "end": 17560,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "true.",
+        "start": 17560,
+        "end": 18000,
+        "confidence": 0.9326172,
+        "speaker": "A"
+      },
+      {
+        "text": "He",
+        "start": 18720,
+        "end": 19080,
+        "confidence": 0.9951172,
+        "speaker": "A"
+      },
+      {
+        "text": "found",
+        "start": 19080,
+        "end": 19440,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 19440,
+        "end": 19720,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "wreck",
+        "start": 19720,
+        "end": 20000,
+        "confidence": 0.99560547,
+        "speaker": "A"
+      },
+      {
+        "text": "of",
+        "start": 20000,
+        "end": 20200,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 20200,
+        "end": 20360,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic.",
+        "start": 20360,
+        "end": 21040,
+        "confidence": 0.9998372,
+        "speaker": "A"
+      },
+      {
+        "text": "The",
+        "start": 22320,
+        "end": 22600,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "ship",
+        "start": 22600,
+        "end": 22960,
+        "confidence": 0.9897461,
+        "speaker": "A"
+      },
+      {
+        "text": "was",
+        "start": 22960,
+        "end": 23280,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "in",
+        "start": 23280,
+        "end": 23480,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "two",
+        "start": 23480,
+        "end": 23680,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "main",
+        "start": 23680,
+        "end": 24000,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "parts,",
+        "start": 24000,
+        "end": 24560,
+        "confidence": 0.99072266,
+        "speaker": "A"
+      },
+      {
+        "text": "lying",
+        "start": 24880,
+        "end": 25320,
+        "confidence": 0.998291,
+        "speaker": "A"
+      },
+      {
+        "text": "4",
+        "start": 25320,
+        "end": 25734,
+        "confidence": 0.9574,
+        "speaker": "A"
+      },
+      {
+        "text": "km",
+        "start": 25826,
+        "end": 26240,
+        "confidence": 0.9574,
+        "speaker": "A"
+      },
+      {
+        "text": "under",
+        "start": 26240,
+        "end": 26520,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 26520,
+        "end": 26760,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "sea.",
+        "start": 26760,
+        "end": 27120,
+        "confidence": 0.9992676,
+        "speaker": "A"
+      },
+      {
+        "text": "Using",
+        "start": 28530,
+        "end": 28770,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "video",
+        "start": 28770,
+        "end": 29170,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "cameras",
+        "start": 29170,
+        "end": 29890,
+        "confidence": 0.9977214,
+        "speaker": "A"
+      },
+      {
+        "text": "and",
+        "start": 29890,
+        "end": 30250,
+        "confidence": 0.77685547,
+        "speaker": "A"
+      },
+      {
+        "text": "an",
+        "start": 30250,
+        "end": 30530,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "undersea",
+        "start": 30530,
+        "end": 31090,
+        "confidence": 0.9991862,
+        "speaker": "A"
+      },
+      {
+        "text": "robot,",
+        "start": 31090,
+        "end": 31650,
+        "confidence": 0.9860026,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard",
+        "start": 31970,
+        "end": 32570,
+        "confidence": 0.9885254,
+        "speaker": "A"
+      },
+      {
+        "text": "looked",
+        "start": 32570,
+        "end": 32890,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "around",
+        "start": 32890,
+        "end": 33090,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 33090,
+        "end": 33330,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "ship.",
+        "start": 33330,
+        "end": 33730,
+        "confidence": 0.99975586,
+        "speaker": "A"
+      },
+      {
+        "text": "He",
+        "start": 34210,
+        "end": 34530,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "found",
+        "start": 34530,
+        "end": 34810,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "many",
+        "start": 34810,
+        "end": 35170,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "items",
+        "start": 35250,
+        "end": 35770,
+        "confidence": 0.9996745,
+        "speaker": "A"
+      },
+      {
+        "text": "that",
+        "start": 35770,
+        "end": 35970,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "told",
+        "start": 35970,
+        "end": 36250,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 36250,
+        "end": 36490,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "sad",
+        "start": 36490,
+        "end": 36850,
+        "confidence": 0.9433594,
+        "speaker": "A"
+      },
+      {
+        "text": "story",
+        "start": 36850,
+        "end": 37170,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "of",
+        "start": 37170,
+        "end": 37370,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 37370,
+        "end": 37530,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic's",
+        "start": 37530,
+        "end": 38330,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "end.",
+        "start": 38330,
+        "end": 38610,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "For",
+        "start": 39170,
+        "end": 39450,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "example,",
+        "start": 39450,
+        "end": 40130,
+        "confidence": 0.9173177,
+        "speaker": "A"
+      },
+      {
+        "text": "he",
+        "start": 40530,
+        "end": 40890,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "found",
+        "start": 40890,
+        "end": 41170,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "a",
+        "start": 41170,
+        "end": 41410,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "child's",
+        "start": 41410,
+        "end": 41970,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "shoes,",
+        "start": 41970,
+        "end": 42450,
+        "confidence": 0.99560547,
+        "speaker": "A"
+      },
+      {
+        "text": "a",
+        "start": 42930,
+        "end": 43289,
+        "confidence": 0.9980469,
+        "speaker": "A"
+      },
+      {
+        "text": "reminder",
+        "start": 43289,
+        "end": 43770,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "of",
+        "start": 43770,
+        "end": 43890,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 43890,
+        "end": 44010,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "many",
+        "start": 44010,
+        "end": 44250,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "deaths",
+        "start": 44250,
+        "end": 44730,
+        "confidence": 0.99975586,
+        "speaker": "A"
+      },
+      {
+        "text": "that",
+        "start": 44730,
+        "end": 44890,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "happened",
+        "start": 44890,
+        "end": 45290,
+        "confidence": 0.9963379,
+        "speaker": "A"
+      },
+      {
+        "text": "that",
+        "start": 45290,
+        "end": 45490,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "night",
+        "start": 45490,
+        "end": 45810,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "in",
+        "start": 45970,
+        "end": 46290,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "1912.",
+        "start": 46290,
+        "end": 47090,
+        "confidence": 0.99976,
+        "speaker": "A"
+      },
+      {
+        "text": "In",
+        "start": 48770,
+        "end": 49090,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "1986,",
+        "start": 49090,
+        "end": 50130,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard",
+        "start": 50370,
+        "end": 51010,
+        "confidence": 0.8093262,
+        "speaker": "A"
+      },
+      {
+        "text": "visited",
+        "start": 51010,
+        "end": 51530,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 51530,
+        "end": 51690,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic",
+        "start": 51690,
+        "end": 52290,
+        "confidence": 0.9998372,
+        "speaker": "A"
+      },
+      {
+        "text": "again.",
+        "start": 52290,
+        "end": 52610,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "This",
+        "start": 54050,
+        "end": 54250,
+        "confidence": 0.9980469,
+        "speaker": "A"
+      },
+      {
+        "text": "time,",
+        "start": 54250,
+        "end": 54610,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "he",
+        "start": 54610,
+        "end": 54930,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "reached",
+        "start": 54930,
+        "end": 55290,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 55290,
+        "end": 55450,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "ship",
+        "start": 55450,
+        "end": 55690,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "in",
+        "start": 55690,
+        "end": 55850,
+        "confidence": 0.9970703,
+        "speaker": "A"
+      },
+      {
+        "text": "a",
+        "start": 55850,
+        "end": 56010,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "small",
+        "start": 56010,
+        "end": 56290,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "submarine.",
+        "start": 56290,
+        "end": 57090,
+        "confidence": 0.958374,
+        "speaker": "A"
+      },
+      {
+        "text": "A",
+        "start": 58290,
+        "end": 58570,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "deep",
+        "start": 58570,
+        "end": 58890,
+        "confidence": 0.9658203,
+        "speaker": "A"
+      },
+      {
+        "text": "sea",
+        "start": 58890,
+        "end": 59250,
+        "confidence": 0.94970703,
+        "speaker": "A"
+      },
+      {
+        "text": "robot",
+        "start": 59250,
+        "end": 59770,
+        "confidence": 0.9451497,
+        "speaker": "A"
+      },
+      {
+        "text": "took",
+        "start": 59770,
+        "end": 60090,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "photos",
+        "start": 60090,
+        "end": 60610,
+        "confidence": 0.99975586,
+        "speaker": "A"
+      },
+      {
+        "text": "inside",
+        "start": 60610,
+        "end": 61090,
+        "confidence": 0.99194336,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 61090,
+        "end": 61410,
+        "confidence": 0.9980469,
+        "speaker": "A"
+      },
+      {
+        "text": "ship.",
+        "start": 61410,
+        "end": 61810,
+        "confidence": 0.99975586,
+        "speaker": "A"
+      },
+      {
+        "text": "When",
+        "start": 63090,
+        "end": 63410,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "other",
+        "start": 63410,
+        "end": 63650,
+        "confidence": 0.9970703,
+        "speaker": "A"
+      },
+      {
+        "text": "people",
+        "start": 63650,
+        "end": 63970,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "saw",
+        "start": 63970,
+        "end": 64250,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 64250,
+        "end": 64450,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "photos,",
+        "start": 64450,
+        "end": 65090,
+        "confidence": 0.9987793,
+        "speaker": "A"
+      },
+      {
+        "text": "they",
+        "start": 65330,
+        "end": 65650,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "wanted",
+        "start": 65650,
+        "end": 66010,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "to",
+        "start": 66010,
+        "end": 66170,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "visit",
+        "start": 66170,
+        "end": 66410,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 66410,
+        "end": 66650,
+        "confidence": 0.9980469,
+        "speaker": "A"
+      },
+      {
+        "text": "ship,",
+        "start": 66650,
+        "end": 66970,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "too.",
+        "start": 66970,
+        "end": 67330,
+        "confidence": 0.99560547,
+        "speaker": "A"
+      },
+      {
+        "text": "When",
+        "start": 68370,
+        "end": 68730,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard",
+        "start": 68730,
+        "end": 69290,
+        "confidence": 0.998291,
+        "speaker": "A"
+      },
+      {
+        "text": "returned",
+        "start": 69290,
+        "end": 69690,
+        "confidence": 0.99975586,
+        "speaker": "A"
+      },
+      {
+        "text": "in",
+        "start": 69690,
+        "end": 69890,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "2004,",
+        "start": 69890,
+        "end": 70930,
+        "confidence": 0.8929,
+        "speaker": "A"
+      },
+      {
+        "text": "he",
+        "start": 71330,
+        "end": 71650,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "found",
+        "start": 71650,
+        "end": 71890,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 71890,
+        "end": 72090,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic",
+        "start": 72090,
+        "end": 72690,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "in",
+        "start": 72690,
+        "end": 72970,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "very",
+        "start": 72970,
+        "end": 73290,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "bad",
+        "start": 73290,
+        "end": 73610,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "condition.",
+        "start": 73610,
+        "end": 74210,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "Other",
+        "start": 74690,
+        "end": 75050,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "explorers",
+        "start": 75050,
+        "end": 75770,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "had",
+        "start": 75770,
+        "end": 75930,
+        "confidence": 0.99560547,
+        "speaker": "A"
+      },
+      {
+        "text": "taken",
+        "start": 75930,
+        "end": 76170,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "away",
+        "start": 76170,
+        "end": 76490,
+        "confidence": 0.99658203,
+        "speaker": "A"
+      },
+      {
+        "text": "about",
+        "start": 76490,
+        "end": 76850,
+        "confidence": 0.9916992,
+        "speaker": "A"
+      },
+      {
+        "text": "6,000",
+        "start": 76930,
+        "end": 77570,
+        "confidence": 0.99951,
+        "speaker": "A"
+      },
+      {
+        "text": "items",
+        "start": 77650,
+        "end": 78290,
+        "confidence": 0.9996745,
+        "speaker": "A"
+      },
+      {
+        "text": "like",
+        "start": 78690,
+        "end": 79050,
+        "confidence": 0.99609375,
+        "speaker": "A"
+      },
+      {
+        "text": "clothes,",
+        "start": 79050,
+        "end": 79650,
+        "confidence": 0.9166667,
+        "speaker": "A"
+      },
+      {
+        "text": "dishes",
+        "start": 79650,
+        "end": 80210,
+        "confidence": 0.91031903,
+        "speaker": "A"
+      },
+      {
+        "text": "and",
+        "start": 80210,
+        "end": 80450,
+        "confidence": 0.9941406,
+        "speaker": "A"
+      },
+      {
+        "text": "shoes.",
+        "start": 80450,
+        "end": 80930,
+        "confidence": 0.9941406,
+        "speaker": "A"
+      },
+      {
+        "text": "Some",
+        "start": 82160,
+        "end": 82400,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "even",
+        "start": 82400,
+        "end": 82720,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "took",
+        "start": 82720,
+        "end": 83000,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "pieces",
+        "start": 83000,
+        "end": 83360,
+        "confidence": 0.9998372,
+        "speaker": "A"
+      },
+      {
+        "text": "of",
+        "start": 83360,
+        "end": 83560,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 83560,
+        "end": 83720,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "ship.",
+        "start": 83720,
+        "end": 84080,
+        "confidence": 0.99121094,
+        "speaker": "A"
+      },
+      {
+        "text": "They",
+        "start": 84880,
+        "end": 85160,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "think",
+        "start": 85160,
+        "end": 85400,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "these",
+        "start": 85400,
+        "end": 85760,
+        "confidence": 0.9980469,
+        "speaker": "A"
+      },
+      {
+        "text": "things",
+        "start": 85760,
+        "end": 86160,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "should",
+        "start": 86160,
+        "end": 86440,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "be",
+        "start": 86440,
+        "end": 86640,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "moved",
+        "start": 86640,
+        "end": 87040,
+        "confidence": 0.9992676,
+        "speaker": "A"
+      },
+      {
+        "text": "to",
+        "start": 87040,
+        "end": 87280,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "a",
+        "start": 87280,
+        "end": 87440,
+        "confidence": 0.99121094,
+        "speaker": "A"
+      },
+      {
+        "text": "safer",
+        "start": 87440,
+        "end": 87920,
+        "confidence": 0.9992676,
+        "speaker": "A"
+      },
+      {
+        "text": "place.",
+        "start": 87920,
+        "end": 88240,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "But",
+        "start": 88560,
+        "end": 88920,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard",
+        "start": 88920,
+        "end": 89480,
+        "confidence": 0.99194336,
+        "speaker": "A"
+      },
+      {
+        "text": "doesn't",
+        "start": 89480,
+        "end": 89840,
+        "confidence": 0.9991862,
+        "speaker": "A"
+      },
+      {
+        "text": "agree.",
+        "start": 89840,
+        "end": 90080,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard",
+        "start": 91600,
+        "end": 92200,
+        "confidence": 0.9863281,
+        "speaker": "A"
+      },
+      {
+        "text": "believes",
+        "start": 92200,
+        "end": 92680,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "that",
+        "start": 92680,
+        "end": 92880,
+        "confidence": 0.9951172,
+        "speaker": "A"
+      },
+      {
+        "text": "taking",
+        "start": 92880,
+        "end": 93200,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "things",
+        "start": 93280,
+        "end": 93600,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "from",
+        "start": 93600,
+        "end": 93800,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 93800,
+        "end": 94000,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic",
+        "start": 94000,
+        "end": 94720,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "is",
+        "start": 94720,
+        "end": 94960,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "wrong.",
+        "start": 94960,
+        "end": 95360,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "Instead,",
+        "start": 96080,
+        "end": 96640,
+        "confidence": 0.9938965,
+        "speaker": "A"
+      },
+      {
+        "text": "he",
+        "start": 97040,
+        "end": 97400,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "wants",
+        "start": 97400,
+        "end": 97760,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "to",
+        "start": 97760,
+        "end": 97880,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "put",
+        "start": 97880,
+        "end": 98120,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "lights",
+        "start": 98120,
+        "end": 98520,
+        "confidence": 0.9992676,
+        "speaker": "A"
+      },
+      {
+        "text": "and",
+        "start": 98520,
+        "end": 98720,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "cameras",
+        "start": 98720,
+        "end": 99200,
+        "confidence": 0.99934894,
+        "speaker": "A"
+      },
+      {
+        "text": "on",
+        "start": 99200,
+        "end": 99440,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "and",
+        "start": 99440,
+        "end": 99640,
+        "confidence": 0.9970703,
+        "speaker": "A"
+      },
+      {
+        "text": "around",
+        "start": 99640,
+        "end": 99880,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 99880,
+        "end": 100120,
+        "confidence": 0.99902344,
+        "speaker": "A"
+      },
+      {
+        "text": "shipwreck.",
+        "start": 100120,
+        "end": 100880,
+        "confidence": 0.95703125,
+        "speaker": "A"
+      },
+      {
+        "text": "This",
+        "start": 101600,
+        "end": 101960,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "way,",
+        "start": 101960,
+        "end": 102320,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "people",
+        "start": 102720,
+        "end": 103080,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "can",
+        "start": 103080,
+        "end": 103360,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "see",
+        "start": 103360,
+        "end": 103560,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 103560,
+        "end": 103720,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "great",
+        "start": 103720,
+        "end": 104000,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "ship",
+        "start": 104000,
+        "end": 104360,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "and",
+        "start": 104360,
+        "end": 104520,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "remember",
+        "start": 104520,
+        "end": 104920,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "what",
+        "start": 104920,
+        "end": 105280,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "happened",
+        "start": 105280,
+        "end": 105680,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "to",
+        "start": 105680,
+        "end": 105800,
+        "confidence": 0.9975586,
+        "speaker": "A"
+      },
+      {
+        "text": "it.",
+        "start": 105800,
+        "end": 106080,
+        "confidence": 0.99609375,
+        "speaker": "A"
+      },
+      {
+        "text": "As",
+        "start": 107210,
+        "end": 107370,
+        "confidence": 0.9970703,
+        "speaker": "A"
+      },
+      {
+        "text": "long",
+        "start": 107370,
+        "end": 107570,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "as",
+        "start": 107570,
+        "end": 107730,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "she",
+        "start": 107730,
+        "end": 107930,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "needs",
+        "start": 107930,
+        "end": 108210,
+        "confidence": 0.99853516,
+        "speaker": "A"
+      },
+      {
+        "text": "protection,",
+        "start": 108210,
+        "end": 108810,
+        "confidence": 1,
+        "speaker": "A"
+      },
+      {
+        "text": "says",
+        "start": 109050,
+        "end": 109410,
+        "confidence": 0.98828125,
+        "speaker": "A"
+      },
+      {
+        "text": "Ballard,",
+        "start": 109410,
+        "end": 110010,
+        "confidence": 0.9746094,
+        "speaker": "A"
+      },
+      {
+        "text": "the",
+        "start": 110250,
+        "end": 110570,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "Titanic",
+        "start": 110570,
+        "end": 111210,
+        "confidence": 0.9773763,
+        "speaker": "A"
+      },
+      {
+        "text": "will",
+        "start": 111210,
+        "end": 111450,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "always",
+        "start": 111450,
+        "end": 111770,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "be",
+        "start": 111770,
+        "end": 112130,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "part",
+        "start": 112130,
+        "end": 112370,
+        "confidence": 0.9980469,
+        "speaker": "A"
+      },
+      {
+        "text": "of",
+        "start": 112370,
+        "end": 112570,
+        "confidence": 0.5620117,
+        "speaker": "A"
+      },
+      {
+        "text": "my",
+        "start": 112570,
+        "end": 112810,
+        "confidence": 0.9995117,
+        "speaker": "A"
+      },
+      {
+        "text": "life.",
+        "start": 112810,
+        "end": 113130,
+        "confidence": 1,
+        "speaker": "A"
+      }
+    ],
+    "utterances": [
+      {
+        "speaker": "A",
+        "text": "As a boy, Robert Ballard liked to read about shipwrecks. He read a lot about the Titanic. My lifelong dream was to find this great ship, he says. On August 31, 1985, Ballard's dream came true. He found the wreck of the Titanic. The ship was in two main parts, lying 4 km under the sea. Using video cameras and an undersea robot, Ballard looked around the ship. He found many items that told the sad story of the Titanic's end. For example, he found a child's shoes, a reminder of the many deaths that happened that night in 1912. In 1986, Ballard visited the Titanic again. This time, he reached the ship in a small submarine. A deep sea robot took photos inside the ship. When other people saw the photos, they wanted to visit the ship, too. When Ballard returned in 2004, he found the Titanic in very bad condition. Other explorers had taken away about 6,000 items like clothes, dishes and shoes. Some even took pieces of the ship. They think these things should be moved to a safer place. But Ballard doesn't agree. Ballard believes that taking things from the Titanic is wrong. Instead, he wants to put lights and cameras on and around the shipwreck. This way, people can see the great ship and remember what happened to it. As long as she needs protection, says Ballard, the Titanic will always be part of my life.",
+        "confidence": 0.98928314,
+        "start": 320,
+        "end": 113130,
+        "words": [
+          {
+            "text": "As",
+            "start": 320,
+            "end": 440,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "a",
+            "start": 440,
+            "end": 600,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "boy,",
+            "start": 600,
+            "end": 960,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "Robert",
+            "start": 1440,
+            "end": 1880,
+            "confidence": 0.9991862,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard",
+            "start": 1880,
+            "end": 2480,
+            "confidence": 0.875,
+            "speaker": "A"
+          },
+          {
+            "text": "liked",
+            "start": 2480,
+            "end": 2800,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "to",
+            "start": 2800,
+            "end": 2920,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "read",
+            "start": 2920,
+            "end": 3120,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "about",
+            "start": 3120,
+            "end": 3400,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "shipwrecks.",
+            "start": 3400,
+            "end": 4160,
+            "confidence": 0.9265137,
+            "speaker": "A"
+          },
+          {
+            "text": "He",
+            "start": 4800,
+            "end": 5120,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "read",
+            "start": 5120,
+            "end": 5360,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "a",
+            "start": 5360,
+            "end": 5560,
+            "confidence": 0.9970703,
+            "speaker": "A"
+          },
+          {
+            "text": "lot",
+            "start": 5560,
+            "end": 5840,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "about",
+            "start": 5840,
+            "end": 6160,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 6160,
+            "end": 6360,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic.",
+            "start": 6360,
+            "end": 7040,
+            "confidence": 0.7947591,
+            "speaker": "A"
+          },
+          {
+            "text": "My",
+            "start": 8160,
+            "end": 8440,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "lifelong",
+            "start": 8440,
+            "end": 9040,
+            "confidence": 0.9947917,
+            "speaker": "A"
+          },
+          {
+            "text": "dream",
+            "start": 9040,
+            "end": 9360,
+            "confidence": 0.8833008,
+            "speaker": "A"
+          },
+          {
+            "text": "was",
+            "start": 9360,
+            "end": 9600,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "to",
+            "start": 9600,
+            "end": 9840,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "find",
+            "start": 9840,
+            "end": 10080,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "this",
+            "start": 10080,
+            "end": 10360,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "great",
+            "start": 10360,
+            "end": 10720,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "ship,",
+            "start": 10720,
+            "end": 11200,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "he",
+            "start": 11440,
+            "end": 11800,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "says.",
+            "start": 11800,
+            "end": 12160,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "On",
+            "start": 12720,
+            "end": 13080,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "August",
+            "start": 13080,
+            "end": 13520,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "31,",
+            "start": 13520,
+            "end": 14492,
+            "confidence": 0.99961,
+            "speaker": "A"
+          },
+          {
+            "text": "1985,",
+            "start": 14708,
+            "end": 15680,
+            "confidence": 0.99961,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard's",
+            "start": 16079,
+            "end": 16920,
+            "confidence": 0.95825195,
+            "speaker": "A"
+          },
+          {
+            "text": "dream",
+            "start": 16920,
+            "end": 17240,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "came",
+            "start": 17240,
+            "end": 17560,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "true.",
+            "start": 17560,
+            "end": 18000,
+            "confidence": 0.9326172,
+            "speaker": "A"
+          },
+          {
+            "text": "He",
+            "start": 18720,
+            "end": 19080,
+            "confidence": 0.9951172,
+            "speaker": "A"
+          },
+          {
+            "text": "found",
+            "start": 19080,
+            "end": 19440,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 19440,
+            "end": 19720,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "wreck",
+            "start": 19720,
+            "end": 20000,
+            "confidence": 0.99560547,
+            "speaker": "A"
+          },
+          {
+            "text": "of",
+            "start": 20000,
+            "end": 20200,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 20200,
+            "end": 20360,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic.",
+            "start": 20360,
+            "end": 21040,
+            "confidence": 0.9998372,
+            "speaker": "A"
+          },
+          {
+            "text": "The",
+            "start": 22320,
+            "end": 22600,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "ship",
+            "start": 22600,
+            "end": 22960,
+            "confidence": 0.9897461,
+            "speaker": "A"
+          },
+          {
+            "text": "was",
+            "start": 22960,
+            "end": 23280,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "in",
+            "start": 23280,
+            "end": 23480,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "two",
+            "start": 23480,
+            "end": 23680,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "main",
+            "start": 23680,
+            "end": 24000,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "parts,",
+            "start": 24000,
+            "end": 24560,
+            "confidence": 0.99072266,
+            "speaker": "A"
+          },
+          {
+            "text": "lying",
+            "start": 24880,
+            "end": 25320,
+            "confidence": 0.998291,
+            "speaker": "A"
+          },
+          {
+            "text": "4",
+            "start": 25320,
+            "end": 25734,
+            "confidence": 0.9574,
+            "speaker": "A"
+          },
+          {
+            "text": "km",
+            "start": 25826,
+            "end": 26240,
+            "confidence": 0.9574,
+            "speaker": "A"
+          },
+          {
+            "text": "under",
+            "start": 26240,
+            "end": 26520,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 26520,
+            "end": 26760,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "sea.",
+            "start": 26760,
+            "end": 27120,
+            "confidence": 0.9992676,
+            "speaker": "A"
+          },
+          {
+            "text": "Using",
+            "start": 28530,
+            "end": 28770,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "video",
+            "start": 28770,
+            "end": 29170,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "cameras",
+            "start": 29170,
+            "end": 29890,
+            "confidence": 0.9977214,
+            "speaker": "A"
+          },
+          {
+            "text": "and",
+            "start": 29890,
+            "end": 30250,
+            "confidence": 0.77685547,
+            "speaker": "A"
+          },
+          {
+            "text": "an",
+            "start": 30250,
+            "end": 30530,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "undersea",
+            "start": 30530,
+            "end": 31090,
+            "confidence": 0.9991862,
+            "speaker": "A"
+          },
+          {
+            "text": "robot,",
+            "start": 31090,
+            "end": 31650,
+            "confidence": 0.9860026,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard",
+            "start": 31970,
+            "end": 32570,
+            "confidence": 0.9885254,
+            "speaker": "A"
+          },
+          {
+            "text": "looked",
+            "start": 32570,
+            "end": 32890,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "around",
+            "start": 32890,
+            "end": 33090,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 33090,
+            "end": 33330,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "ship.",
+            "start": 33330,
+            "end": 33730,
+            "confidence": 0.99975586,
+            "speaker": "A"
+          },
+          {
+            "text": "He",
+            "start": 34210,
+            "end": 34530,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "found",
+            "start": 34530,
+            "end": 34810,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "many",
+            "start": 34810,
+            "end": 35170,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "items",
+            "start": 35250,
+            "end": 35770,
+            "confidence": 0.9996745,
+            "speaker": "A"
+          },
+          {
+            "text": "that",
+            "start": 35770,
+            "end": 35970,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "told",
+            "start": 35970,
+            "end": 36250,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 36250,
+            "end": 36490,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "sad",
+            "start": 36490,
+            "end": 36850,
+            "confidence": 0.9433594,
+            "speaker": "A"
+          },
+          {
+            "text": "story",
+            "start": 36850,
+            "end": 37170,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "of",
+            "start": 37170,
+            "end": 37370,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 37370,
+            "end": 37530,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic's",
+            "start": 37530,
+            "end": 38330,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "end.",
+            "start": 38330,
+            "end": 38610,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "For",
+            "start": 39170,
+            "end": 39450,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "example,",
+            "start": 39450,
+            "end": 40130,
+            "confidence": 0.9173177,
+            "speaker": "A"
+          },
+          {
+            "text": "he",
+            "start": 40530,
+            "end": 40890,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "found",
+            "start": 40890,
+            "end": 41170,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "a",
+            "start": 41170,
+            "end": 41410,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "child's",
+            "start": 41410,
+            "end": 41970,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "shoes,",
+            "start": 41970,
+            "end": 42450,
+            "confidence": 0.99560547,
+            "speaker": "A"
+          },
+          {
+            "text": "a",
+            "start": 42930,
+            "end": 43289,
+            "confidence": 0.9980469,
+            "speaker": "A"
+          },
+          {
+            "text": "reminder",
+            "start": 43289,
+            "end": 43770,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "of",
+            "start": 43770,
+            "end": 43890,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 43890,
+            "end": 44010,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "many",
+            "start": 44010,
+            "end": 44250,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "deaths",
+            "start": 44250,
+            "end": 44730,
+            "confidence": 0.99975586,
+            "speaker": "A"
+          },
+          {
+            "text": "that",
+            "start": 44730,
+            "end": 44890,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "happened",
+            "start": 44890,
+            "end": 45290,
+            "confidence": 0.9963379,
+            "speaker": "A"
+          },
+          {
+            "text": "that",
+            "start": 45290,
+            "end": 45490,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "night",
+            "start": 45490,
+            "end": 45810,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "in",
+            "start": 45970,
+            "end": 46290,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "1912.",
+            "start": 46290,
+            "end": 47090,
+            "confidence": 0.99976,
+            "speaker": "A"
+          },
+          {
+            "text": "In",
+            "start": 48770,
+            "end": 49090,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "1986,",
+            "start": 49090,
+            "end": 50130,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard",
+            "start": 50370,
+            "end": 51010,
+            "confidence": 0.8093262,
+            "speaker": "A"
+          },
+          {
+            "text": "visited",
+            "start": 51010,
+            "end": 51530,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 51530,
+            "end": 51690,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic",
+            "start": 51690,
+            "end": 52290,
+            "confidence": 0.9998372,
+            "speaker": "A"
+          },
+          {
+            "text": "again.",
+            "start": 52290,
+            "end": 52610,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "This",
+            "start": 54050,
+            "end": 54250,
+            "confidence": 0.9980469,
+            "speaker": "A"
+          },
+          {
+            "text": "time,",
+            "start": 54250,
+            "end": 54610,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "he",
+            "start": 54610,
+            "end": 54930,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "reached",
+            "start": 54930,
+            "end": 55290,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 55290,
+            "end": 55450,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "ship",
+            "start": 55450,
+            "end": 55690,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "in",
+            "start": 55690,
+            "end": 55850,
+            "confidence": 0.9970703,
+            "speaker": "A"
+          },
+          {
+            "text": "a",
+            "start": 55850,
+            "end": 56010,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "small",
+            "start": 56010,
+            "end": 56290,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "submarine.",
+            "start": 56290,
+            "end": 57090,
+            "confidence": 0.958374,
+            "speaker": "A"
+          },
+          {
+            "text": "A",
+            "start": 58290,
+            "end": 58570,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "deep",
+            "start": 58570,
+            "end": 58890,
+            "confidence": 0.9658203,
+            "speaker": "A"
+          },
+          {
+            "text": "sea",
+            "start": 58890,
+            "end": 59250,
+            "confidence": 0.94970703,
+            "speaker": "A"
+          },
+          {
+            "text": "robot",
+            "start": 59250,
+            "end": 59770,
+            "confidence": 0.9451497,
+            "speaker": "A"
+          },
+          {
+            "text": "took",
+            "start": 59770,
+            "end": 60090,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "photos",
+            "start": 60090,
+            "end": 60610,
+            "confidence": 0.99975586,
+            "speaker": "A"
+          },
+          {
+            "text": "inside",
+            "start": 60610,
+            "end": 61090,
+            "confidence": 0.99194336,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 61090,
+            "end": 61410,
+            "confidence": 0.9980469,
+            "speaker": "A"
+          },
+          {
+            "text": "ship.",
+            "start": 61410,
+            "end": 61810,
+            "confidence": 0.99975586,
+            "speaker": "A"
+          },
+          {
+            "text": "When",
+            "start": 63090,
+            "end": 63410,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "other",
+            "start": 63410,
+            "end": 63650,
+            "confidence": 0.9970703,
+            "speaker": "A"
+          },
+          {
+            "text": "people",
+            "start": 63650,
+            "end": 63970,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "saw",
+            "start": 63970,
+            "end": 64250,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 64250,
+            "end": 64450,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "photos,",
+            "start": 64450,
+            "end": 65090,
+            "confidence": 0.9987793,
+            "speaker": "A"
+          },
+          {
+            "text": "they",
+            "start": 65330,
+            "end": 65650,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "wanted",
+            "start": 65650,
+            "end": 66010,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "to",
+            "start": 66010,
+            "end": 66170,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "visit",
+            "start": 66170,
+            "end": 66410,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 66410,
+            "end": 66650,
+            "confidence": 0.9980469,
+            "speaker": "A"
+          },
+          {
+            "text": "ship,",
+            "start": 66650,
+            "end": 66970,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "too.",
+            "start": 66970,
+            "end": 67330,
+            "confidence": 0.99560547,
+            "speaker": "A"
+          },
+          {
+            "text": "When",
+            "start": 68370,
+            "end": 68730,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard",
+            "start": 68730,
+            "end": 69290,
+            "confidence": 0.998291,
+            "speaker": "A"
+          },
+          {
+            "text": "returned",
+            "start": 69290,
+            "end": 69690,
+            "confidence": 0.99975586,
+            "speaker": "A"
+          },
+          {
+            "text": "in",
+            "start": 69690,
+            "end": 69890,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "2004,",
+            "start": 69890,
+            "end": 70930,
+            "confidence": 0.8929,
+            "speaker": "A"
+          },
+          {
+            "text": "he",
+            "start": 71330,
+            "end": 71650,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "found",
+            "start": 71650,
+            "end": 71890,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 71890,
+            "end": 72090,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic",
+            "start": 72090,
+            "end": 72690,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "in",
+            "start": 72690,
+            "end": 72970,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "very",
+            "start": 72970,
+            "end": 73290,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "bad",
+            "start": 73290,
+            "end": 73610,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "condition.",
+            "start": 73610,
+            "end": 74210,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "Other",
+            "start": 74690,
+            "end": 75050,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "explorers",
+            "start": 75050,
+            "end": 75770,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "had",
+            "start": 75770,
+            "end": 75930,
+            "confidence": 0.99560547,
+            "speaker": "A"
+          },
+          {
+            "text": "taken",
+            "start": 75930,
+            "end": 76170,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "away",
+            "start": 76170,
+            "end": 76490,
+            "confidence": 0.99658203,
+            "speaker": "A"
+          },
+          {
+            "text": "about",
+            "start": 76490,
+            "end": 76850,
+            "confidence": 0.9916992,
+            "speaker": "A"
+          },
+          {
+            "text": "6,000",
+            "start": 76930,
+            "end": 77570,
+            "confidence": 0.99951,
+            "speaker": "A"
+          },
+          {
+            "text": "items",
+            "start": 77650,
+            "end": 78290,
+            "confidence": 0.9996745,
+            "speaker": "A"
+          },
+          {
+            "text": "like",
+            "start": 78690,
+            "end": 79050,
+            "confidence": 0.99609375,
+            "speaker": "A"
+          },
+          {
+            "text": "clothes,",
+            "start": 79050,
+            "end": 79650,
+            "confidence": 0.9166667,
+            "speaker": "A"
+          },
+          {
+            "text": "dishes",
+            "start": 79650,
+            "end": 80210,
+            "confidence": 0.91031903,
+            "speaker": "A"
+          },
+          {
+            "text": "and",
+            "start": 80210,
+            "end": 80450,
+            "confidence": 0.9941406,
+            "speaker": "A"
+          },
+          {
+            "text": "shoes.",
+            "start": 80450,
+            "end": 80930,
+            "confidence": 0.9941406,
+            "speaker": "A"
+          },
+          {
+            "text": "Some",
+            "start": 82160,
+            "end": 82400,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "even",
+            "start": 82400,
+            "end": 82720,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "took",
+            "start": 82720,
+            "end": 83000,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "pieces",
+            "start": 83000,
+            "end": 83360,
+            "confidence": 0.9998372,
+            "speaker": "A"
+          },
+          {
+            "text": "of",
+            "start": 83360,
+            "end": 83560,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 83560,
+            "end": 83720,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "ship.",
+            "start": 83720,
+            "end": 84080,
+            "confidence": 0.99121094,
+            "speaker": "A"
+          },
+          {
+            "text": "They",
+            "start": 84880,
+            "end": 85160,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "think",
+            "start": 85160,
+            "end": 85400,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "these",
+            "start": 85400,
+            "end": 85760,
+            "confidence": 0.9980469,
+            "speaker": "A"
+          },
+          {
+            "text": "things",
+            "start": 85760,
+            "end": 86160,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "should",
+            "start": 86160,
+            "end": 86440,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "be",
+            "start": 86440,
+            "end": 86640,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "moved",
+            "start": 86640,
+            "end": 87040,
+            "confidence": 0.9992676,
+            "speaker": "A"
+          },
+          {
+            "text": "to",
+            "start": 87040,
+            "end": 87280,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "a",
+            "start": 87280,
+            "end": 87440,
+            "confidence": 0.99121094,
+            "speaker": "A"
+          },
+          {
+            "text": "safer",
+            "start": 87440,
+            "end": 87920,
+            "confidence": 0.9992676,
+            "speaker": "A"
+          },
+          {
+            "text": "place.",
+            "start": 87920,
+            "end": 88240,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "But",
+            "start": 88560,
+            "end": 88920,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard",
+            "start": 88920,
+            "end": 89480,
+            "confidence": 0.99194336,
+            "speaker": "A"
+          },
+          {
+            "text": "doesn't",
+            "start": 89480,
+            "end": 89840,
+            "confidence": 0.9991862,
+            "speaker": "A"
+          },
+          {
+            "text": "agree.",
+            "start": 89840,
+            "end": 90080,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard",
+            "start": 91600,
+            "end": 92200,
+            "confidence": 0.9863281,
+            "speaker": "A"
+          },
+          {
+            "text": "believes",
+            "start": 92200,
+            "end": 92680,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "that",
+            "start": 92680,
+            "end": 92880,
+            "confidence": 0.9951172,
+            "speaker": "A"
+          },
+          {
+            "text": "taking",
+            "start": 92880,
+            "end": 93200,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "things",
+            "start": 93280,
+            "end": 93600,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "from",
+            "start": 93600,
+            "end": 93800,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 93800,
+            "end": 94000,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic",
+            "start": 94000,
+            "end": 94720,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "is",
+            "start": 94720,
+            "end": 94960,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "wrong.",
+            "start": 94960,
+            "end": 95360,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "Instead,",
+            "start": 96080,
+            "end": 96640,
+            "confidence": 0.9938965,
+            "speaker": "A"
+          },
+          {
+            "text": "he",
+            "start": 97040,
+            "end": 97400,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "wants",
+            "start": 97400,
+            "end": 97760,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "to",
+            "start": 97760,
+            "end": 97880,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "put",
+            "start": 97880,
+            "end": 98120,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "lights",
+            "start": 98120,
+            "end": 98520,
+            "confidence": 0.9992676,
+            "speaker": "A"
+          },
+          {
+            "text": "and",
+            "start": 98520,
+            "end": 98720,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "cameras",
+            "start": 98720,
+            "end": 99200,
+            "confidence": 0.99934894,
+            "speaker": "A"
+          },
+          {
+            "text": "on",
+            "start": 99200,
+            "end": 99440,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "and",
+            "start": 99440,
+            "end": 99640,
+            "confidence": 0.9970703,
+            "speaker": "A"
+          },
+          {
+            "text": "around",
+            "start": 99640,
+            "end": 99880,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 99880,
+            "end": 100120,
+            "confidence": 0.99902344,
+            "speaker": "A"
+          },
+          {
+            "text": "shipwreck.",
+            "start": 100120,
+            "end": 100880,
+            "confidence": 0.95703125,
+            "speaker": "A"
+          },
+          {
+            "text": "This",
+            "start": 101600,
+            "end": 101960,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "way,",
+            "start": 101960,
+            "end": 102320,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "people",
+            "start": 102720,
+            "end": 103080,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "can",
+            "start": 103080,
+            "end": 103360,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "see",
+            "start": 103360,
+            "end": 103560,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 103560,
+            "end": 103720,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "great",
+            "start": 103720,
+            "end": 104000,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "ship",
+            "start": 104000,
+            "end": 104360,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "and",
+            "start": 104360,
+            "end": 104520,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "remember",
+            "start": 104520,
+            "end": 104920,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "what",
+            "start": 104920,
+            "end": 105280,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "happened",
+            "start": 105280,
+            "end": 105680,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "to",
+            "start": 105680,
+            "end": 105800,
+            "confidence": 0.9975586,
+            "speaker": "A"
+          },
+          {
+            "text": "it.",
+            "start": 105800,
+            "end": 106080,
+            "confidence": 0.99609375,
+            "speaker": "A"
+          },
+          {
+            "text": "As",
+            "start": 107210,
+            "end": 107370,
+            "confidence": 0.9970703,
+            "speaker": "A"
+          },
+          {
+            "text": "long",
+            "start": 107370,
+            "end": 107570,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "as",
+            "start": 107570,
+            "end": 107730,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "she",
+            "start": 107730,
+            "end": 107930,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "needs",
+            "start": 107930,
+            "end": 108210,
+            "confidence": 0.99853516,
+            "speaker": "A"
+          },
+          {
+            "text": "protection,",
+            "start": 108210,
+            "end": 108810,
+            "confidence": 1,
+            "speaker": "A"
+          },
+          {
+            "text": "says",
+            "start": 109050,
+            "end": 109410,
+            "confidence": 0.98828125,
+            "speaker": "A"
+          },
+          {
+            "text": "Ballard,",
+            "start": 109410,
+            "end": 110010,
+            "confidence": 0.9746094,
+            "speaker": "A"
+          },
+          {
+            "text": "the",
+            "start": 110250,
+            "end": 110570,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "Titanic",
+            "start": 110570,
+            "end": 111210,
+            "confidence": 0.9773763,
+            "speaker": "A"
+          },
+          {
+            "text": "will",
+            "start": 111210,
+            "end": 111450,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "always",
+            "start": 111450,
+            "end": 111770,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "be",
+            "start": 111770,
+            "end": 112130,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "part",
+            "start": 112130,
+            "end": 112370,
+            "confidence": 0.9980469,
+            "speaker": "A"
+          },
+          {
+            "text": "of",
+            "start": 112370,
+            "end": 112570,
+            "confidence": 0.5620117,
+            "speaker": "A"
+          },
+          {
+            "text": "my",
+            "start": 112570,
+            "end": 112810,
+            "confidence": 0.9995117,
+            "speaker": "A"
+          },
+          {
+            "text": "life.",
+            "start": 112810,
+            "end": 113130,
+            "confidence": 1,
+            "speaker": "A"
+          }
+        ]
+      }
+    ],
+    "confidence": 0.98928314,
+    "audio_duration": 116,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "prompt": null,
+    "keyterms_prompt": [],
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_audio_options": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speaker_options": null,
+    "content_safety": false,
+    "iab_categories": false,
+    "content_safety_labels": {
+      "status": "unavailable",
+      "results": [],
+      "summary": {}
+    },
+    "iab_categories_result": {
+      "status": "unavailable",
+      "results": [],
+      "summary": {}
+    },
+    "language_detection": true,
+    "language_detection_options": null,
+    "language_detection_results": null,
+    "language_confidence_threshold": 0.1,
+    "language_confidence": 0.999,
+    "custom_spelling": null,
+    "throttled": false,
+    "auto_chapters": false,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": 0.1,
+    "speech_model": "universal",
+    "speech_models": null,
+    "speech_model_used": "universal",
+    "chapters": null,
+    "disfluencies": false,
+    "entity_detection": false,
+    "sentiment_analysis": false,
+    "sentiment_analysis_results": null,
+    "entities": null,
+    "speakers_expected": null,
+    "summary": null,
+    "custom_topics_results": null,
+    "is_deleted": null,
+    "multichannel": null,
+    "project_id": 1320202,
+    "token_id": 1330190
+  }

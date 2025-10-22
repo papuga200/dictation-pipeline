@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+output/
+dictation_*/
+*.wav
+*.mp3
+*.m4a
+*.flac
+temp/
+work_dir/
+
+# Keep example data
+!U4A.json
+!U4A.txt
+!Unit\ 4A\ (clean).mp3
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
