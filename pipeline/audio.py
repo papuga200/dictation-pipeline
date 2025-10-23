@@ -341,7 +341,11 @@ class AudioPipeline:
         repeats: int = 3,
         pause_ms: int = 10000,
         inter_sentence_pause_ms: int = 10000,
-        fade_ms: int = 8
+        fade_ms: int = 8,
+        dynamic_reps_enabled: bool = False,
+        dynamic_threshold_seconds: float = 4.5,
+        dynamic_short_repeats: int = 3,
+        dynamic_long_repeats: int = 5
     ) -> List[dict]:
         """
         Build complete dictation audio from sentence spans.
@@ -351,10 +355,14 @@ class AudioPipeline:
             sentence_spans: List of (start_ms, end_ms) tuples
             output_path: Output file path
             tempo: Tempo multiplier
-            repeats: Number of repeats per sentence
+            repeats: Number of repeats per sentence (used if dynamic_reps_enabled=False)
             pause_ms: Pause between repeats (ms)
             inter_sentence_pause_ms: Pause between different sentences (ms)
             fade_ms: Fade duration for clips
+            dynamic_reps_enabled: If True, use dynamic repetitions based on chunk length
+            dynamic_threshold_seconds: Threshold for determining short vs long chunks
+            dynamic_short_repeats: Repetitions for chunks < threshold
+            dynamic_long_repeats: Repetitions for chunks >= threshold
         
         Returns:
             List of dictionaries with timing info for each sentence
@@ -374,6 +382,19 @@ class AudioPipeline:
         current_offset_ms = 0
         
         for idx, (start_ms, end_ms) in enumerate(sentence_spans, start=1):
+            # Calculate original chunk duration (before tempo change)
+            original_chunk_duration_ms = end_ms - start_ms
+            original_chunk_duration_seconds = original_chunk_duration_ms / 1000.0
+            
+            # Determine repetitions for this sentence
+            if dynamic_reps_enabled:
+                if original_chunk_duration_seconds < dynamic_threshold_seconds:
+                    sentence_repeats = dynamic_short_repeats
+                else:
+                    sentence_repeats = dynamic_long_repeats
+            else:
+                sentence_repeats = repeats
+            
             # Process sentence
             tempo_clip = self.process_sentence(
                 source_audio, idx, start_ms, end_ms, tempo, fade_ms
@@ -387,7 +408,7 @@ class AudioPipeline:
             block_parts = []
             repeat_offsets = []
             
-            for rep in range(repeats):
+            for rep in range(sentence_repeats):
                 block_parts.append(tempo_clip)
                 
                 # Record offset for this repeat
@@ -397,7 +418,7 @@ class AudioPipeline:
                 
                 current_offset_ms += clip_duration_ms
                 
-                if rep < repeats - 1:
+                if rep < sentence_repeats - 1:
                     # Add pause between repeats
                     block_parts.append(silence_repeat)
                     current_offset_ms += pause_ms
@@ -414,7 +435,9 @@ class AudioPipeline:
                 'source_span_ms': {'start': start_ms, 'end': end_ms},
                 'clip_duration_ms': clip_duration_ms,
                 'repeat_offsets_ms': repeat_offsets,
-                'block_end_ms': current_offset_ms
+                'block_end_ms': current_offset_ms,
+                'num_repeats': sentence_repeats,  # Track actual repetitions used
+                'original_duration_seconds': original_chunk_duration_seconds
             })
         
         # Concatenate all parts

@@ -19,6 +19,13 @@ from .manifest import (
     save_manifests, generate_alignment_summary
 )
 
+# Grok AI alignment (optional - requires XAI_API_KEY)
+try:
+    from .grok_alignment import align_sentences_with_grok, GrokAlignerConfig
+    GROK_AVAILABLE = True
+except ImportError:
+    GROK_AVAILABLE = False
+
 
 class DictationBuilder:
     """Main class for building dictation audio from source materials."""
@@ -47,13 +54,20 @@ class DictationBuilder:
         """Return default configuration."""
         return {
             'tempo': 0.92,
-            'repeats': 3,
+            'repeats': 3,  # Deprecated - use dynamic_repetitions
             'pause_ms': 10000,
             'inter_sentence_pause_ms': 10000,
             'pad_ms': 100,
             'fade_ms': 8,
             'sample_rate': 44100,
+            'dynamic_repetitions': {
+                'enabled': True,
+                'threshold_seconds': 4.5,
+                'short_chunk_repeats': 3,
+                'long_chunk_repeats': 5,
+            },
             'alignment': {
+                'method': 'hybrid',  # Options: 'fuzzy', 'grok', 'hybrid'
                 'window_tokens': 4000,
                 'elastic_gap': 10,
                 'min_accept': 0.85,
@@ -61,6 +75,13 @@ class DictationBuilder:
                 'token_ratio_cutoff': 92,
                 'coverage_min': 0.80,
                 'small_sentence_coverage_min': 0.67,
+            },
+            'grok': {
+                'model': 'grok-4-fast',
+                'temperature': 0.1,
+                'max_workers': 5,
+                'max_retries': 3,
+                'timeout': 30,
             }
         }
 
@@ -73,6 +94,162 @@ class DictationBuilder:
                 else:
                     dst[k] = v
         _merge(self.config, custom_config)
+    
+    def _perform_alignment(
+        self,
+        sentences: List[str],
+        words: List[dict],
+        method: str
+    ) -> Tuple[List[Optional[Tuple[int, int]]], Dict]:
+        """
+        Perform sentence alignment using specified method.
+        
+        Args:
+            sentences: List of sentence strings
+            words: List of word dicts with timestamps
+            method: Alignment method ('fuzzy', 'grok', or 'hybrid')
+        
+        Returns:
+            (sentence_spans, alignment_report)
+        """
+        pad_ms = self.config['pad_ms']
+        
+        if method == 'grok':
+            # Grok AI alignment only
+            if not GROK_AVAILABLE:
+                raise RuntimeError(
+                    "Grok alignment not available. Install: pip install openai pydantic\n"
+                    "And set XAI_API_KEY environment variable."
+                )
+            
+            print("  Using: Grok AI alignment (grok-4-fast)")
+            grok_config = GrokAlignerConfig()
+            if 'grok' in self.config:
+                for key, value in self.config['grok'].items():
+                    if hasattr(grok_config, key):
+                        setattr(grok_config, key, value)
+            
+            spans, report = align_sentences_with_grok(sentences, words, grok_config, pad_ms)
+            
+            # Tag all details with method
+            for detail in report.get('details', []):
+                detail['method'] = 'grok'
+            
+            # Add method stats to global
+            report['global']['methods'] = {
+                'grok': report['global']['aligned'],
+                'fuzzy': 0
+            }
+            
+            return spans, report
+        
+        elif method == 'hybrid':
+            # Hybrid: Try Grok first, fallback to fuzzy for failures
+            if not GROK_AVAILABLE:
+                print("  ⚠️  Grok not available, using fuzzy matching only")
+                method = 'fuzzy'
+            else:
+                print("  Using: Hybrid (Grok AI → Fuzzy fallback)")
+                
+                # Try Grok alignment
+                grok_config = GrokAlignerConfig()
+                if 'grok' in self.config:
+                    for key, value in self.config['grok'].items():
+                        if hasattr(grok_config, key):
+                            setattr(grok_config, key, value)
+                
+                grok_spans, grok_report = align_sentences_with_grok(
+                    sentences, words, grok_config, pad_ms
+                )
+                
+                # Tag Grok details with method
+                for detail in grok_report.get('details', []):
+                    detail['method'] = 'grok'
+                
+                # Find failures
+                failed_indices = [i for i, span in enumerate(grok_spans) if span is None]
+                
+                if not failed_indices:
+                    # All succeeded with Grok
+                    print(f"  [OK] Grok: {grok_report['global']['aligned']}/{len(sentences)}")
+                    # Add method stats to global
+                    grok_report['global']['methods'] = {
+                        'grok': grok_report['global']['aligned'],
+                        'fuzzy': 0
+                    }
+                    return grok_spans, grok_report
+                
+                # Use fuzzy matching for failures
+                print(f"  [OK] Grok: {grok_report['global']['aligned']}/{len(sentences)}")
+                print(f"  [->] Fuzzy fallback for {len(failed_indices)} failed sentences...")
+                
+                align_config = AlignmentConfig()
+                if 'alignment' in self.config:
+                    for key, value in self.config['alignment'].items():
+                        if hasattr(align_config, key) and key != 'method':
+                            setattr(align_config, key, value)
+                
+                failed_sentences = [sentences[i] for i in failed_indices]
+                fuzzy_spans, fuzzy_report = align_sentences_to_words(
+                    failed_sentences, words, align_config, pad_ms
+                )
+                
+                # Tag fuzzy details with method and adjust indices
+                for detail in fuzzy_report.get('details', []):
+                    detail['method'] = 'fuzzy'
+                    # Adjust idx to match original sentence list
+                    original_idx = failed_indices[detail['idx'] - 1] + 1
+                    detail['idx'] = original_idx
+                
+                # Merge results
+                final_spans = grok_spans.copy()
+                for i, fuzzy_idx in enumerate(failed_indices):
+                    final_spans[fuzzy_idx] = fuzzy_spans[i]
+                
+                # Count successful fuzzy alignments
+                fuzzy_successes = sum(1 for s in fuzzy_spans if s is not None)
+                
+                # Merge reports
+                merged_report = {
+                    "global": {
+                        "num_sentences": len(sentences),
+                        "aligned": sum(1 for s in final_spans if s is not None),
+                        "unaligned": sum(1 for s in final_spans if s is None),
+                        "warnings": grok_report['global']['warnings'] + fuzzy_report['global']['warnings'],
+                        "methods": {
+                            "grok": grok_report['global']['aligned'],
+                            "fuzzy": fuzzy_successes
+                        }
+                    },
+                    "details": grok_report.get('details', []) + fuzzy_report.get('details', [])
+                }
+                
+                print(f"  [OK] Fuzzy: {fuzzy_successes}/{len(failed_sentences)}")
+                print(f"  [OK] Total: {merged_report['global']['aligned']}/{len(sentences)}")
+                
+                return final_spans, merged_report
+        
+        # Default: Fuzzy matching only
+        print("  Using: Fuzzy matching (traditional)")
+        align_config = AlignmentConfig()
+        if 'alignment' in self.config:
+            for key, value in self.config['alignment'].items():
+                if hasattr(align_config, key) and key != 'method':
+                    setattr(align_config, key, value)
+        
+        spans, report = align_sentences_to_words(sentences, words, align_config, pad_ms)
+        
+        # Tag all details with method
+        for detail in report.get('details', []):
+            detail['method'] = 'fuzzy'
+        
+        # Add method stats to global
+        report['global']['methods'] = {
+            'grok': 0,
+            'fuzzy': report['global']['aligned']
+        }
+        
+        return spans, report
     
     def load_words_json(self, json_path: Union[Path, bytes, str]) -> Tuple[List[dict], dict]:
         """
@@ -192,15 +369,11 @@ class DictationBuilder:
         # Step 3: Align sentences to words
         print("\n🔍 Aligning sentences to word timestamps...")
         
-        # Create alignment config
-        align_config = AlignmentConfig()
-        if 'alignment' in self.config:
-            for key, value in self.config['alignment'].items():
-                if hasattr(align_config, key):
-                    setattr(align_config, key, value)
+        # Determine alignment method
+        alignment_method = self.config.get('alignment', {}).get('method', 'fuzzy')
         
-        sentence_spans, aligner_report = align_sentences_to_words(
-            sentences, words, config=align_config, pad_ms=self.config['pad_ms']
+        sentence_spans, aligner_report = self._perform_alignment(
+            sentences, words, alignment_method
         )
         
         print(f"  ✓ Aligned: {aligner_report['global']['aligned']}/{len(sentences)}")
@@ -237,16 +410,37 @@ class DictationBuilder:
         
         final_audio = output_dir_final / 'dictation_final.wav'
         
-        sentence_timing_info = audio_pipeline.build_dictation_audio(
-            source_audio=audio_input,
-            sentence_spans=valid_span_list,
-            output_path=final_audio,
-            tempo=self.config['tempo'],
-            repeats=self.config['repeats'],
-            pause_ms=self.config['pause_ms'],
-            inter_sentence_pause_ms=self.config.get('inter_sentence_pause_ms', self.config['pause_ms']),
-            fade_ms=self.config['fade_ms']
-        )
+        # Prepare dynamic repetition parameters
+        dyn_rep = self.config.get('dynamic_repetitions', {})
+        if dyn_rep.get('enabled', False):
+            # Use dynamic repetitions
+            sentence_timing_info = audio_pipeline.build_dictation_audio(
+                source_audio=audio_input,
+                sentence_spans=valid_span_list,
+                output_path=final_audio,
+                tempo=self.config['tempo'],
+                repeats=None,  # Signal to use dynamic repetitions
+                pause_ms=self.config['pause_ms'],
+                inter_sentence_pause_ms=self.config.get('inter_sentence_pause_ms', self.config['pause_ms']),
+                fade_ms=self.config['fade_ms'],
+                dynamic_reps_enabled=True,
+                dynamic_threshold_seconds=dyn_rep.get('threshold_seconds', 4.5),
+                dynamic_short_repeats=dyn_rep.get('short_chunk_repeats', 3),
+                dynamic_long_repeats=dyn_rep.get('long_chunk_repeats', 5)
+            )
+        else:
+            # Use fixed repetitions
+            sentence_timing_info = audio_pipeline.build_dictation_audio(
+                source_audio=audio_input,
+                sentence_spans=valid_span_list,
+                output_path=final_audio,
+                tempo=self.config['tempo'],
+                repeats=self.config['repeats'],
+                pause_ms=self.config['pause_ms'],
+                inter_sentence_pause_ms=self.config.get('inter_sentence_pause_ms', self.config['pause_ms']),
+                fade_ms=self.config['fade_ms'],
+                dynamic_reps_enabled=False
+            )
         
         final_audio_info = get_audio_info(final_audio)
         print(f"  ✓ Created dictation audio: {final_audio_info['duration_ms']/1000:.1f}s")

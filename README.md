@@ -2,18 +2,29 @@
 
 A powerful tool for creating dictation audio from source recordings with word-level timestamps. Perfect for language learning applications.
 
+## 🆕 What's New
+
+- **📝 Custom Filenames**: NEW! Specify custom output filenames in the UI - organize your dictation files with descriptive names
+- **🔁 Dynamic Repetitions**: NEW! Automatically adjust repetitions based on sentence length - short chunks (< 4.5s) get 3 repeats, long chunks (≥ 4.5s) get 5 repeats, fully adjustable via UI
+- **🧠 Grok AI Alignment**: Use xAI's Grok-4-fast with structured outputs for AI-powered sentence alignment (see `GROK_ALIGNMENT_README.md`)
+- **📝 Environment Variables**: Uses `.env` files for easy API key management (see `ENV_SETUP.md`)
+- **🤖 Auto-Transcription**: Skip manual JSON creation! Automatically transcribe audio using AssemblyAI's API
+- **📦 MP3 Output**: Downloads are now compressed to MP3 format (80-90% smaller file sizes)
+- **🎯 Enhanced Workflow**: Choose between auto-transcription or manual JSON upload
+
 ## Features
 
+- 🤖 **Auto-Transcription**: Automatically transcribe audio using AssemblyAI's API (optional)
 - 🎵 **Tempo Adjustment**: Slows audio to 92% (configurable) while preserving pitch using FFmpeg's `atempo` filter
-- 🔁 **Sentence Repetition**: Repeats each sentence 3× with configurable pauses
-- 🎯 **Fuzzy Alignment**: Robust sentence-to-timestamp alignment using:
-  - Anchor-based matching (proper nouns, numbers, rare words)
-  - Composite scoring (token similarity + coverage + bigram matching)
-  - Fallback strategies for difficult alignments
+- 🔁 **Dynamic Repetitions** (NEW): Automatically adjusts repetitions based on chunk length - shorter chunks get fewer repeats (3×), longer chunks get more (5×), with configurable threshold
+- 🎯 **Dual Alignment Modes**:
+  - **Fuzzy Matching**: Fast, offline alignment using anchor-based matching and composite scoring
+  - **🧠 Grok AI Alignment**: AI-powered alignment using xAI's Grok-4-fast for superior accuracy with paraphrased or differently-worded text
 - ✏️ **Manual Adjustment**: Web GUI allows manual time correction for any sentence
 - 📊 **Detailed Reports**: JSON manifests with timing, quality scores, and diagnostics
 - 🌐 **Web Interface**: User-friendly Streamlit GUI
 - 🖥️ **CLI Support**: Batch processing via command line
+- 📦 **MP3 Output**: Compressed MP3 downloads for smaller file sizes
 
 ## Requirements
 
@@ -67,9 +78,23 @@ streamlit run app.py
 2. **Open your browser** to the URL shown (usually `http://localhost:8501`)
 
 3. **Follow the three-step workflow**:
-   - **Upload & Configure**: Paste canonical text, upload words JSON and audio
+   - **Upload & Configure**: Paste canonical text, then either:
+     - 🤖 **Auto-transcribe** with AssemblyAI (requires API key), or
+     - 📄 Upload existing words JSON and audio files
    - **Review & Adjust**: Run automatic alignment, manually adjust any problematic sentences
-   - **Build & Download**: Generate dictation audio and download results
+   - **Build & Download**: Generate dictation audio and download as MP3
+
+#### Auto-Transcription with AssemblyAI (Optional)
+
+To enable automatic transcription:
+
+1. Sign up at [AssemblyAI](https://www.assemblyai.com/) and get your API key
+2. In the sidebar, expand **"🤖 AssemblyAI Auto-Transcription"**
+3. Enter your API key and click **"🔑 Test API Key"**
+4. Select **"🤖 Auto-transcribe with AssemblyAI"** mode in Step 1
+5. Upload only your audio file (no JSON needed!)
+
+See [ASSEMBLYAI_INTEGRATION.md](ASSEMBLYAI_INTEGRATION.md) for detailed setup and usage.
 
 ### Option 2: Command Line
 
@@ -242,11 +267,18 @@ Edit `config.yaml` to customize behavior:
 ```yaml
 # Audio processing
 tempo: 0.92                    # Speed multiplier (0.5-2.0)
-repeats: 3                     # Repetitions per sentence
+repeats: 3                     # Repetitions per sentence (deprecated - use dynamic_repetitions)
 pause_ms: 10000               # Pause between repeats
 inter_sentence_pause_ms: 10000 # Pause between sentences
 pad_ms: 100                   # Boundary padding
 fade_ms: 8                    # Fade duration
+
+# Dynamic repetitions based on chunk length
+dynamic_repetitions:
+  enabled: true                # Enable dynamic repetitions
+  threshold_seconds: 4.5       # Chunks < this get short_repeats, >= get long_repeats
+  short_chunk_repeats: 3       # Repetitions for short chunks
+  long_chunk_repeats: 5        # Repetitions for long chunks
 
 # Alignment
 alignment:
@@ -261,6 +293,26 @@ alignment:
     anchor_bonus: 0.08        # Anchor bonus
     bigram_bonus: 0.05        # Bigram bonus
 ```
+
+### Dynamic Repetitions
+
+The dynamic repetitions feature automatically adjusts how many times each sentence is repeated based on its original length:
+
+- **Short chunks** (< 4.5 seconds by default): Repeated 3 times
+- **Long chunks** (≥ 4.5 seconds by default): Repeated 5 times
+
+**Benefits:**
+- Short, simple sentences don't take up excessive time
+- Long, complex sentences get more repetitions for better comprehension
+- Fully configurable via UI or config file
+
+**Example:**
+```
+Sentence 1: "Hi!" (1.2s) → 3 repeats
+Sentence 2: "The ship was in two main parts." (5.8s) → 5 repeats
+```
+
+Enable/disable and adjust thresholds in the Streamlit UI sidebar under "🔄 Repetitions".
 
 ## How It Works
 

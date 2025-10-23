@@ -54,8 +54,16 @@ work_dir/
 
 # Logs
 *.log
+logs/
 
 # Temporary files
 *.tmp
 *.temp
+
+# Environment variables (secrets)
+.env
+.env.local
+
+# Keep example file
+!.env.example
 

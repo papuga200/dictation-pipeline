@@ -3,16 +3,24 @@
 
 # Audio processing parameters
 tempo: 0.92                    # Playback speed (0.5-2.0, where 1.0 is normal speed)
-repeats: 3                     # Number of times to repeat each sentence
+repeats: 3                     # Number of times to repeat each sentence (deprecated - use dynamic_repetitions)
 pause_ms: 10000               # Pause between sentence repeats (milliseconds)
 inter_sentence_pause_ms: 10000 # Pause between different sentences (milliseconds)
 pad_ms: 100                   # Padding added to sentence boundaries (milliseconds)
 fade_ms: 8                    # Fade in/out duration to prevent clicks (milliseconds)
 sample_rate: 44100            # Audio sample rate (Hz)
 
+# Dynamic repetitions based on chunk length
+dynamic_repetitions:
+  enabled: true                # Enable dynamic repetitions based on chunk length
+  threshold_seconds: 4.5       # Chunks shorter than this get short_repeats, longer chunks get long_repeats
+  short_chunk_repeats: 3       # Repetitions for chunks < threshold_seconds
+  long_chunk_repeats: 5        # Repetitions for chunks >= threshold_seconds
+
 # Alignment parameters
 alignment:
-  window_tokens: 4000         # Search window size in tokens
+  method: hybrid              # Alignment method: 'fuzzy', 'grok', or 'hybrid' (recommended)
+  window_tokens: 4000         # Search window size in tokens (fuzzy matching)
   elastic_gap: 10             # Allowed gap between expected and actual span
   min_accept: 0.82            # Minimum score for automatic acceptance
   warn_accept: 0.75           # Warning threshold score
@@ -20,13 +28,21 @@ alignment:
   coverage_min: 0.80          # Minimum token coverage required
   small_sentence_coverage_min: 0.67  # Coverage for sentences < 6 tokens
 
-  # Scoring weights
+  # Scoring weights (fuzzy matching)
   weights:
     token_sim: 0.50           # Token similarity weight
     coverage: 0.25            # Coverage weight
     gap_penalty: 0.20         # Gap penalty weight
     anchor_bonus: 0.08        # Anchor bonus weight
     bigram_bonus: 0.05        # Bigram bonus weight
+
+# Grok AI alignment parameters (requires XAI_API_KEY in .env)
+grok:
+  model: grok-4-fast          # Grok model to use
+  temperature: 0.1            # Low = more consistent (0.0-2.0)
+  max_workers: 5              # Parallel API requests
+  max_retries: 3              # Retry attempts per sentence
+  timeout: 30                 # Request timeout (seconds)
 
 # Fallback parameters (used when initial alignment fails)
 fallback:
